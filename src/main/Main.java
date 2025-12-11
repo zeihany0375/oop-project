@@ -1,5 +1,4 @@
 package main;
-
 import entity.user.*;
 import entity.workitem.*;
 import entity.sprint.Sprint;
@@ -7,13 +6,7 @@ import service.*;
 import dao.*;
 import java.time.LocalDate;
 import java.util.List;
-/**
- * Main Application Driver for Milestone 1.
- * Initializes the entire application architecture using Dependency Injection (DI)
- * and executes comprehensive test cases to verify ALL methods and strict business rules.
- */
 public class Main {
-
     // Global DAO and Service instances (initialized in main)
     private static IUserDAO userDAO;
     private static IWorkItemDAO workItemDAO;
@@ -22,14 +15,12 @@ public class Main {
     private static TaskService taskService;
     private static SprintService sprintService;
     private static WorkItemService workItemService;
-
     // --- Initialized Users for testing ---
     private static Developer devA;
     private static Developer devB;
     private static QAengineer qaA;
     private static ScrumMaster smA;
     private static Stakeholder shA;
-
     public static void main(String[] args) {
         System.out.println("--- Enterprise Agile Task Coordinator Backend Test Suite ---");
 
@@ -338,3 +329,4 @@ public class Main {
         }
     }
 }
+
